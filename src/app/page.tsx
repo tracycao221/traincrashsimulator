@@ -131,7 +131,7 @@ export default function HomePage() {
             />
             <div className="mt-6 grid gap-3">
               {guideClusters.map((guide) => (
-                <Link key={guide.href} href={guide.href} className="row-link">
+              <Link key={`${guide.href}-${guide.title}`} href={guide.href} className="row-link">
                   <span>
                     <strong>{guide.title}</strong>
                     <small>{guide.description}</small>
@@ -149,7 +149,7 @@ export default function HomePage() {
             />
             <div className="mt-6 grid gap-3">
               {wikiCards.map((item) => (
-                <Link key={item.href} href={item.href} className="row-link">
+                <Link key={`${item.href}-${item.title}`} href={item.href} className="row-link">
                   <span>
                     <strong>{item.title}</strong>
                     <small>{item.description}</small>
@@ -205,7 +205,7 @@ export default function HomePage() {
           />
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {videoGuides.map((video) => (
-              <a key={video.href} href={video.href} className="content-card" target="_blank" rel="noreferrer">
+              <a key={`${video.href}-${video.title}`} href={video.href} className="content-card" target="_blank" rel="noreferrer">
                 <span className="mini-label">{video.source ?? video.eyebrow}</span>
                 <h3 className="mt-3 text-lg font-bold text-white">{video.title}</h3>
                 <p className="mt-2 text-sm text-white/65">{video.description}</p>
