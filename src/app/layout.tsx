@@ -10,7 +10,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const popunderScriptUrl = runtimeConfig.adsterraPopunderScriptUrl;
-const adsenseClientId = runtimeConfig.adsenseClientId;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
@@ -49,6 +48,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true
   },
+  verification: {
+    google: "HXowYdN1DQohcX5AHUI-2fqNBjXQG_Ino4o-iFPMyaU"
+  },
   appleWebApp: {
     capable: true,
     title: siteConfig.name,
@@ -63,15 +65,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7762683401538954"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${inter.variable} font-sans`}>
-        {adsenseClientId ? (
-          <script
-            id="google-adsense"
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClientId}`}
-            crossOrigin="anonymous"
-          />
-        ) : null}
         {popunderScriptUrl ? (
           <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
         ) : null}
