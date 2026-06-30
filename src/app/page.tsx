@@ -16,22 +16,23 @@ import {
 import { FaqJsonLd, SoftwareApplicationJsonLd, WebSiteJsonLd } from "@/components/seo/JsonLd";
 import { SectionHeader, TrustNote } from "@/components/ui/content";
 import { BrandHero } from "@/components/home/BrandHero";
+import { seoHubLinks } from "@/data/seo-pages";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Wiki, Codes, Tier List and Tools`,
-  description: siteConfig.description,
+  title: `${siteConfig.gameName} Codes, Guide & Wiki`,
+  description: `Find ${siteConfig.gameName} codes, how to play, controls, beginner guide, best crashes, walkthrough, strategy, updates, FAQ, and source-backed Roblox notes.`,
   alternates: { canonical: siteConfig.domain },
   openGraph: {
-    title: `${siteConfig.gameName} Wiki, Codes and Tools`,
-    description: siteConfig.description,
+    title: `${siteConfig.gameName} Codes, Guide and Wiki`,
+    description: `Codes, how to play, controls, beginner guide, best crashes, walkthrough, strategy, updates, and source-backed Roblox notes.`,
     url: siteConfig.domain,
     type: "website",
     images: [{ url: "/opengraph-image" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Wiki, Codes and Tools`,
-    description: siteConfig.description,
+    title: `${siteConfig.gameName} Codes, Guide and Wiki`,
+    description: `Codes, how to play, controls, beginner guide, best crashes, walkthrough, strategy, updates, and Roblox notes.`,
     images: ["/opengraph-image"]
   }
 };
@@ -159,6 +160,23 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <SectionHeader
+          eyebrow="Player help"
+          title="More Train Crash Simulator guides"
+          copy="Use these focused pages for how to play, controls, tips, walkthroughs, crash testing, updates, FAQ, and strategy without losing the main codes and wiki paths."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          {seoHubLinks.map((page) => (
+            <Link key={page.href} href={page.href} className="content-card">
+              <span className="mini-label">{page.intent}</span>
+              <h3 className="mt-3 text-lg font-bold leading-6 text-white">{page.anchor}</h3>
+              <p className="mt-2 text-sm leading-6 text-white/65">{page.description}</p>
+            </Link>
+          ))}
         </div>
       </section>
 

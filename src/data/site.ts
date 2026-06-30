@@ -5,11 +5,11 @@ export const siteConfig: SiteConfig = {
   name: `${gameConfig.name} Wiki`,
   domain: gameConfig.domain,
   gameName: gameConfig.name,
-  description: `${gameConfig.name} wiki with active codes, tier list rankings, Trello and Discord status, calculators, guides, and source-backed Roblox progression help.`,
-  valueProposition: `Track active ${gameConfig.name} codes, compare the best picks, and use practical tools before you spend time grinding in Roblox.`,
+  description: `${gameConfig.name} codes, beginner guide, how to play, controls, best crashes, walkthrough, strategy, updates, and source-backed Roblox wiki help.`,
+  valueProposition: `Find ${gameConfig.name} codes, how to play help, controls, beginner tips, best crashes, and strategy notes before you spend time grinding in Roblox.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-06-10",
-  freshnessLabel: "codes, tier list, and guides ready for verification",
+  lastUpdated: "2026-06-30",
+  freshnessLabel: "codes, beginner guide, controls, and crash tips",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -67,10 +67,10 @@ export const siteConfig: SiteConfig = {
 };
 
 export const heroActions = [
-  { href: "/codes", label: "Get codes" },
-  { href: "/tier-list", label: "View tier list" },
-  { href: "/trello", label: "Check sources" },
-  { href: "/calculator", label: "Use calculator" }
+  { href: "/codes", label: "Check codes" },
+  { href: "/beginner-guide", label: "Beginner guide" },
+  { href: "/how-to-play", label: "How to play" },
+  { href: "/best-crashes", label: "Best crashes" }
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
@@ -85,7 +85,7 @@ export const activeCodes: GameCode[] = [
     code: "IMCOOL",
     reward: "Red and Black VIP BR Engine",
     status: "Needs check",
-    addedDate: "Checked from Roblox Den on 2026-06-28"
+    addedDate: "Roblox Den showed 1 active code and 0 expired with a last-checked stamp of 10:47PM on 06/29/2026; GameRant search results dated 2026-06-25 also pointed to Train Crash Simulator codes; a June 27, 2026 YouTube guide repeated new-codes wording without exposing another code; public sources reviewed here on 2026-06-30"
   }
 ];
 
@@ -152,21 +152,21 @@ export const toolCards: LinkCard[] = [
 export const guideClusters: LinkCard[] = [
   {
     title: "Beginner guide",
-    href: "/guides",
+    href: "/beginner-guide",
     eyebrow: "Guide",
-    description: "First-session path, mistakes to avoid, and what to unlock first."
+    description: "First-session checklist for codes, controls, crash testing, and safe source checks."
   },
   {
-    title: "Progression guide",
-    href: "/guides",
+    title: "How to play walkthrough",
+    href: "/walkthrough",
     eyebrow: "Guide",
-    description: "Mid-game priorities, resource planning, and farming routes."
+    description: "Step-by-step route from official page checks to controls, codes, and first crash tests."
   },
   {
-    title: "Advanced strategy",
-    href: "/guides",
+    title: "Strategy guide",
+    href: "/strategy",
     eyebrow: "Guide",
-    description: "Late-game builds, boss prep, meta choices, or trading decisions."
+    description: "Plan around rewards, crash goals, source confidence, and update-sensitive advice."
   }
 ];
 
@@ -251,20 +251,20 @@ export const videoGuides: LinkCard[] = [
 export const faqs: Record<"home" | "codes" | "tierList" | "calculator", FaqItem[]> = {
   home: [
     {
-      q: `What is ${gameConfig.name} Wiki?`,
-      a: `${gameConfig.name} Wiki is a fan-made Roblox resource for codes, tier lists, calculators, guides, and source-backed progression help.`
+      q: `Where should I start on ${gameConfig.name}?`,
+      a: `Start with current ${gameConfig.name} code notes, then read the beginner guide, controls page, walkthrough, and best crashes guide before planning a longer strategy.`
+    },
+    {
+      q: `Does this site have ${gameConfig.name} codes and how-to-play help?`,
+      a: `Yes. The site links codes, how to play, controls, tips, walkthrough, strategy, best crashes, updates, and FAQ pages from the homepage.`
+    },
+    {
+      q: `Are ${gameConfig.name} code rewards guaranteed?`,
+      a: "No. Code rewards stay labeled with source notes and checked dates so the page does not overstate unverified rewards."
     },
     {
       q: `Is this the official ${gameConfig.name} website?`,
       a: "No. This is an unofficial fan site. Use the official Roblox page and creator-owned channels for official support, purchases, moderation, and account issues."
-    },
-    {
-      q: `How often should ${gameConfig.name} codes be checked?`,
-      a: "Codes should be checked whenever the game updates, reaches milestones, or community sources report new rewards. Keep the checked date visible."
-    },
-    {
-      q: `What pages should be expanded first?`,
-      a: "Start with codes, tier list, Trello/Discord status, calculator, beginner guide, wiki hub, and sources. Add entity pages after research confirms the game's real systems."
     }
   ],
   codes: [

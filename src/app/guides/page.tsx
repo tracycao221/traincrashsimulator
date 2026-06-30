@@ -44,19 +44,19 @@ const guides = [
 ];
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Guides - Beginner, Codes, Coins & Engines`,
-  description: `Train Crash Simulator guides for beginners, codes, Coins, Gems, engine unlocks, crash scenarios, and BrentAnimate railway-series source checks.`,
+  title: `${siteConfig.gameName} Guide Hub - Beginner, Controls & Strategy`,
+  description: `${siteConfig.gameName} guide hub for how to play, beginner route, controls, codes, crash testing, strategy, updates, and source-safe Roblox help.`,
   alternates: { canonical: `${siteConfig.domain}/guides` },
   openGraph: {
-    title: `${siteConfig.gameName} Guides`,
-    description: `Beginner, codes, currency, engines, crash scenarios, and source checks for Train Crash Simulator.`,
+    title: `${siteConfig.gameName} Guide Hub`,
+    description: `How to play, beginner route, controls, codes, crash testing, strategy, updates, and source-safe Roblox help.`,
     url: `${siteConfig.domain}/guides`,
     images: ["/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Guides`,
-    description: `Beginner, codes, currency, engines, crash scenarios, and source checks for Train Crash Simulator.`,
+    title: `${siteConfig.gameName} Guide Hub`,
+    description: `How to play, beginner route, controls, codes, crash testing, strategy, updates, and source-safe Roblox help.`,
     images: ["/opengraph-image"]
   }
 };
@@ -69,7 +69,7 @@ export default function GuidesPage() {
       <PageIntro
         eyebrow="Guide hub"
         title={`${siteConfig.gameName} Guides`}
-        description="Use this hub for beginner help, code redemption, Coins and Gems planning, engine unlock decisions, crash-scenario testing, and source checks."
+        description="Use this hub for how to play help, beginner routes, controls, code redemption, crash-scenario testing, updates, strategy, and source checks."
       />
 
       <section className="mt-10">

@@ -5,19 +5,19 @@ import { BreadcrumbJsonLd, FaqJsonLd, ItemListJsonLd } from "@/components/seo/Js
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Tier List`,
-  description: `Best ${siteConfig.gameName} trains and crash-scenario picks with confidence labels and source notes.`,
+  title: `${siteConfig.gameName} Tier List - Best Trains, Engines & Crashes`,
+  description: `${siteConfig.gameName} tier list for best trains, engine picks, crash-scenario testing, beginner choices, and needs-check source labels.`,
   alternates: { canonical: `${siteConfig.domain}/tier-list` },
   openGraph: {
-    title: `${siteConfig.gameName} Tier List`,
-    description: `Best ${siteConfig.gameName} trains and crash-scenario picks with confidence labels and source notes.`,
+    title: `${siteConfig.gameName} Tier List - Best Trains`,
+    description: `Best trains, engine picks, crash-scenario testing, beginner choices, and source labels for ${siteConfig.gameName}.`,
     url: `${siteConfig.domain}/tier-list`,
     images: ["/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Tier List`,
-    description: `Best ${siteConfig.gameName} trains and crash-scenario picks with confidence labels and source notes.`,
+    title: `${siteConfig.gameName} Tier List - Best Trains`,
+    description: `Best trains, engine picks, crash-scenario testing, beginner choices, and source labels for ${siteConfig.gameName}.`,
     images: ["/opengraph-image"]
   }
 };

@@ -44,19 +44,19 @@ const wikiTopics = [
 ];
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Wiki - Engines, Coins, Gems & Crash Scenarios`,
-  description: `${siteConfig.gameName} wiki hub for engines, crash scenarios, Coins, Gems, missions, rewards, and source-backed Roblox notes.`,
+  title: `${siteConfig.gameName} Wiki - Codes, Engines, Crashes & Updates`,
+  description: `${siteConfig.gameName} wiki for codes, engines, crash scenarios, controls, Coins, Gems, missions, updates, and source-backed Roblox notes.`,
   alternates: { canonical: `${siteConfig.domain}/wiki` },
   openGraph: {
-    title: `${siteConfig.gameName} Wiki`,
-    description: `${siteConfig.gameName} wiki hub for engines, crash scenarios, Coins, Gems, missions, and source notes.`,
+    title: `${siteConfig.gameName} Wiki - Codes and Crashes`,
+    description: `${siteConfig.gameName} wiki for codes, engines, crash scenarios, controls, updates, and source notes.`,
     url: `${siteConfig.domain}/wiki`,
     images: ["/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Wiki`,
-    description: `${siteConfig.gameName} wiki hub for engines, crash scenarios, Coins, Gems, missions, and source notes.`,
+    title: `${siteConfig.gameName} Wiki - Codes and Crashes`,
+    description: `${siteConfig.gameName} wiki for codes, engines, crash scenarios, controls, updates, and source notes.`,
     images: ["/opengraph-image"]
   }
 };
@@ -69,7 +69,7 @@ export default function WikiPage() {
       <PageIntro
         eyebrow="Wiki hub"
         title={`${siteConfig.gameName} Wiki`}
-        description="Use this hub for source-backed notes on engines, crash scenarios, Coins, Gems, missions, rewards, and BrentAnimate railway-series transfer claims."
+        description="Use this hub for source-backed notes on codes, engines, crash scenarios, controls, Coins, Gems, missions, updates, rewards, and BrentAnimate railway-series transfer claims."
       />
 
       <section className="mt-10">

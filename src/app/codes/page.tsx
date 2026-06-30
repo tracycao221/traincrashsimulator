@@ -23,7 +23,7 @@ const faq = [
   },
   {
     q: "What does IMCOOL give in Train Crash Simulator?",
-    a: "Roblox Den reports that IMCOOL gives a Red and Black VIP BR Engine. We still mark it Needs check until a same-day live verification is done."
+    a: "Roblox Den listed IMCOOL for a Red and Black VIP BR Engine and showed 1 active code with 0 expired, with a last-checked stamp of 10:47PM on June 29, 2026, when we reviewed public sources on June 30, 2026. Current search also surfaced a live GameRant result dated June 25, 2026 for Train Crash Simulator codes, and a June 27, 2026 YouTube guide repeated new-codes phrasing for the game, but accessible public results still did not expose another confirmed code or any confirmed expired code, so we keep IMCOOL at Needs check until a same-day live in-game verification is done."
   },
   {
     q: "How often are new Train Crash Simulator codes checked?",
@@ -47,19 +47,19 @@ function buildFaqSchema() {
 }
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()}) - Working Rewards`,
-  description: `Checked ${siteConfig.gameName} codes for ${getCurrentMonthYear()}, rewards, redemption steps, expired codes, and code-not-working fixes.`,
+  title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()}) - IMCOOL, Rewards & Fixes`,
+  description: `${siteConfig.gameName} codes for ${getCurrentMonthYear()}: IMCOOL reward notes, redemption steps, expired-code status, and code-not-working fixes with source labels.`,
   alternates: { canonical: `${siteConfig.domain}/codes` },
   openGraph: {
-    title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()})`,
-    description: `Checked ${siteConfig.gameName} codes, rewards, redemption steps, and source confidence notes.`,
+    title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()}) - IMCOOL`,
+    description: `IMCOOL reward notes, redemption steps, expired-code status, and source confidence labels for ${siteConfig.gameName}.`,
     url: `${siteConfig.domain}/codes`,
     images: ["/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()})`,
-    description: `Checked ${siteConfig.gameName} codes, rewards, redemption steps, and source confidence notes.`,
+    title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()}) - IMCOOL`,
+    description: `IMCOOL reward notes, redemption steps, expired-code status, and source confidence labels for ${siteConfig.gameName}.`,
     images: ["/opengraph-image"]
   }
 };
@@ -75,16 +75,16 @@ export default function CodesPage() {
       <Breadcrumbs items={[{ label: "Codes", href: "/codes" }]} />
 
       <PageIntro
-        eyebrow="Last verified: 2026-06-28"
+        eyebrow="Last reviewed: 2026-06-30"
         title={`${siteConfig.gameName} Codes (${monthYear})`}
-        description="Copy the current best-known Train Crash Simulator code, check the reward, and use the source notes before you spend Coins or Gems."
+        description="Copy the current best-known Train Crash Simulator code, check the reward, and use the source notes before you spend Coins or Gems. Public sources reviewed on June 30, 2026 still point to one reported active code and no confirmed expired codes: Roblox Den refreshed IMCOOL on June 29, 2026, and a June 27 YouTube guide reinforced the same new-codes search intent without revealing another code."
       />
 
       <section className="mt-10">
         <SectionHeader
           eyebrow="Active Codes"
           title="Working codes to check first"
-          copy="Codes are freshness-sensitive. IMCOOL is reported by Roblox Den and should be rechecked in-game before final deployment."
+          copy="Codes are freshness-sensitive. Roblox Den still showed IMCOOL as the only directly reviewed public code, with 0 expired codes and a last-checked stamp of 10:47PM on June 29, 2026, during our June 30 review. Current search also surfaced a live GameRant result dated June 25, 2026 for Train Crash Simulator codes, and a June 27 YouTube guide repeated new-codes phrasing without exposing another code, so we still need same-day in-game confirmation before making a stronger claim."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {codes.map((code) => (
@@ -134,7 +134,7 @@ export default function CodesPage() {
         <SectionHeader
           eyebrow="Expired Codes"
           title="Expired and removed codes"
-          copy="No expired Train Crash Simulator codes are confirmed yet. This section stays visible so old codes can be checked instead of silently disappearing."
+          copy="No expired Train Crash Simulator codes are confirmed from current public sources. This section stays visible so old codes can be checked instead of silently disappearing."
         />
         <div className="mt-6 grid gap-4">
           {expiredCodes.map((code) => (
@@ -144,7 +144,7 @@ export default function CodesPage() {
             </article>
           ))}
           {expiredCodes.length === 0 ? (
-            <p className="content-card text-white/68">No confirmed expired codes yet.</p>
+            <p className="content-card text-white/68">No confirmed expired codes from current public sources yet.</p>
           ) : null}
         </div>
       </section>

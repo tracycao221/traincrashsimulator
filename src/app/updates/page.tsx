@@ -28,19 +28,19 @@ const updateChecks = [
 ];
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Updates - Codes, Events & Source Changes`,
-  description: `Track Train Crash Simulator updates, code freshness, Roblox page changes, source status, and tier-list evidence checks.`,
+  title: `${siteConfig.gameName} Updates - Codes, Patches & Source Checks`,
+  description: `Track ${siteConfig.gameName} updates, code freshness, Roblox page changes, patch checks, source status, controls, and tier-list evidence.`,
   alternates: { canonical: `${siteConfig.domain}/updates` },
   openGraph: {
-    title: `${siteConfig.gameName} Updates`,
-    description: "Track code freshness, Roblox page changes, source status, and tier-list evidence checks.",
+    title: `${siteConfig.gameName} Updates - Codes and Patches`,
+    description: "Track code freshness, Roblox page changes, patch checks, source status, controls, and tier-list evidence.",
     url: `${siteConfig.domain}/updates`,
     images: ["/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Updates`,
-    description: "Track code freshness, Roblox page changes, source status, and tier-list evidence checks.",
+    title: `${siteConfig.gameName} Updates - Codes and Patches`,
+    description: "Track code freshness, Roblox page changes, patch checks, source status, controls, and tier-list evidence.",
     images: ["/opengraph-image"]
   }
 };
